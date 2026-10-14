@@ -13,9 +13,10 @@ int searchInsert(int* nums, int numsSize, int target) {
             position = i;
             break;
         }
-        if(target > nums[numsSize-1]){
-            position = numsSize;
-        }
     }
+
+   if(target > nums[numsSize-1]){
+        position = numsSize;
+   }
     return position;
 }
